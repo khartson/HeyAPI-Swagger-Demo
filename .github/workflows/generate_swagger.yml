@@ -30,3 +30,12 @@ jobs:
               with: 
                 name: swager-spec
                 path: swagger.json
+            
+            - name: Upload Swagger spec 
+              uses: hey-api/upload-openapi-spec@v1.3.0
+              with: 
+                path-to-file: swagger.json
+                tags: v1
+              env: 
+                HEYAPI_TOKEN: ${{ secrets.HEYAPI_TOKEN }}
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

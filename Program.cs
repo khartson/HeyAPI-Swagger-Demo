@@ -1,7 +1,7 @@
 using Addresses;
 using Addresses.Census;
 using Microsoft.Extensions.Options;
-using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
 

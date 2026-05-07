@@ -23,7 +23,7 @@ jobs:
 
             - name: Generate Swagger JSON 
               run: | 
-                 dotnet swagger tofile --output swagger.json bin/Debug/net10.0/Actions_Demo_API.dll v1
+                 dotnet swagger tofile --output swagger.json bin/Release/net10.0/Actions_Demo_API.dll v1
 
             - name: Upload Swagger Artifact 
               uses: actions/upload-artifact@v4

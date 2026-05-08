@@ -32,7 +32,7 @@ jobs:
                 path: swagger.json
             
             - name: Upload Swagger spec 
-              uses: hey-api/upload-openapi-spec@v1.3.0
+              uses: hey-api/upload-openapi-spec@b54ad48164a3af32d9da07c225547a536533ad0f # 1.3.0
               with: 
                 path-to-file: swagger.json
                 tags: v1
